@@ -1,6 +1,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   color: #213053;
+  margin: 0;
 }
 
 header {
@@ -64,8 +65,9 @@ button {
 
 .about {
   display: flex;
+  position: relative;
   justify-content: space-around;
-  align-items: center;
+  /*align-items: center;*/
   padding-top: 115px;
   padding-bottom: 115px;
   background: url('img/back.png') no-repeat;
@@ -214,7 +216,7 @@ footer h3 {
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 50px;
+  grid-gap: 50px;
 }
 
 .card {
@@ -372,6 +374,14 @@ footer h3 {
 
 .footer__links a {
   margin-bottom: 15px;
+}
+
+.orb-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }
 
 @media (max-width: 720px) {
